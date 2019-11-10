@@ -38,7 +38,7 @@ router.post('/', async (req, res) => {
                     shipping_method: 'Standard',
                     tracking_number: myOrder.shipmentIdentifier,
                     cost: 0.00,
-                    label: config.labelURL + order.order_id + '.pdf',
+                    label: config.labelURL + myOrder.shipmentIdentifier + '.pdf',
                     customs_info: '',
                     shipping_carrier: 'Hermes_BorderGuru'
                 };
